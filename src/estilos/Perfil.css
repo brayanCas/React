@@ -1,0 +1,111 @@
+body {
+  background: linear-gradient(135deg, #ff6b6b, #8e54e9, #5fc9f8);
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ajusta la altura para que ocupe todo el viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-perfil {
+  width: 80%;
+  height: auto;
+  margin: 10px 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; 
+  box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9);
+  display: flex;
+  border-radius: 10px;
+}
+
+.imagen-perfil{
+  height:auto ;
+  width: auto ;
+
+}
+
+.contenedor-texto-perfil{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  line-height: 1rem;
+}
+
+.cargo-perfil{
+  font-size: 1rem;
+}
+
+.resena-perfil{
+  font-size: 1rem;   
+}
+
+.imagen {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%; 
+  
+}
+
+ .btn-llamativo {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-llamativo:hover {
+  background-color: rgba(255, 107, 107, 0.8); /* Red with 80% opacity */
+  border-color: #ff6b6b;
+}
+.btn-llamativo2 {
+  background-color: rgba(0, 0, 0, 0); /* Fondo completamente transparente */
+  border: none; /* Sin borde */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s ease; /* Animar cambio de color de fondo */
+}
+
+.btn-llamativo2:hover {
+  background-color: rgba(0, 0, 0, 0); /* Mantener el fondo transparente al pasar el mouse */
+}
+
+
+.contador-clicks {
+  font-size: 16px;
+  color: #ffffff; /* Green */
+  text-align: center;
+  margin-top: 2px; /* Espaciado superior para separarlo de los botones */
+  font-weight: bold; /* Hace que el texto esté en negrita */
+}
+
+.contador-clicks::before {
+  content: "Has hecho click ";
+}
+
+.contador-clicks::after {
+  content: " veces";
+}
+
+.contenedor-botones {
+  display: flex;
+  flex-direction: column;
+}
